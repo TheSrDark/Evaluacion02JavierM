@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        android:tag="Aventura">
+
+        <!-- Contenedor horizontal para imagen, título y descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Imagen -->
+            <ImageView
+                android:id="@+id/imageViewCard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_aventura01" />
+
+            <!-- Contenedor vertical para título y descripción -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Señor de los anillos"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Descripción -->
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genero: Aventura" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:layout_editor_absoluteX="-12dp"
+        android:tag="Accion">
+
+        <!-- Contenedor horizontal para imagen, título y descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Imagen -->
+            <ImageView
+                android:id="@+id/imageViewCard2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_accion03" />
+
+            <!-- Contenedor vertical para título y descripción -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/textViewTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="John Wick"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Descripción -->
+                <TextView
+                    android:id="@+id/textViewDescription2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genero: Acción" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:layout_editor_absoluteX="-12dp"
+        android:tag="Terror">
+
+        <!-- Contenedor horizontal para imagen, título y descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Imagen -->
+            <ImageView
+                android:id="@+id/imageViewCard3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_terror01" />
+
+            <!-- Contenedor vertical para título y descripción -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/textViewTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El Conjuro"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Descripción -->
+                <TextView
+                    android:id="@+id/textViewDescription3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genero: Terror" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:layout_editor_absoluteX="-12dp"
+        android:tag="Aventura">
+
+        <!-- Contenedor horizontal para imagen, título y descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Imagen -->
+            <ImageView
+                android:id="@+id/imageViewCard4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_aventura02" />
+
+            <!-- Contenedor vertical para título y descripción -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/textViewTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El Hobbit - La desolación de Smaug"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Descripción -->
+                <TextView
+                    android:id="@+id/textViewDescription4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genero: Aventura" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        tools:layout_editor_absoluteX="-12dp"
+        android:tag="Terror">
+
+        <!-- Contenedor horizontal para imagen, título y descripción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Imagen -->
+            <ImageView
+                android:id="@+id/imageViewCard5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_terror03" />
+
+            <!-- Contenedor vertical para título y descripción -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Título -->
+                <TextView
+                    android:id="@+id/textViewTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Annabelle"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Descripción -->
+                <TextView
+                    android:id="@+id/textViewDescription5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genero: Terror" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
